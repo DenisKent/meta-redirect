@@ -4,9 +4,10 @@
 <h1>Hello world</h1>
 <script>
 const url = window.location.href;
-console.log("decoding")
-const redirectUrl = url.split("redirect=")[1];
-console.log("decoded", decodeURIComponent(redirectUrl));
+const endcodedRedirectUrl = url.split("redirect=")[1];
+const redirectUrl = decodeURIComponent(endcodedRedirectUrl)
+console.log("decoded", redirectUrl);
+document.location.href = redirectUrl
 </script>
 </body>
 </html>
