@@ -4,6 +4,9 @@
 <h1>Hello world</h1>
 <script>
 console.log(window.location.href)
+const url = window.location.href;
+const redirectUrl = url.split("redirect=")[1];
+console.log(decodeURIComponent(redirectUrl));
 </script>
 </body>
 </html>
