@@ -7,7 +7,7 @@ const url = window.location.href;
 const endcodedRedirectUrl = url.split("redirect=")[1];
 const redirectUrl = decodeURIComponent(endcodedRedirectUrl)
 console.log("decoded", redirectUrl);
-document.location.href = redirectUrl
+window.open(redirectUrl);
 </script>
 </body>
 </html>
